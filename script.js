@@ -146,7 +146,8 @@ function initScrollAnimations() {
   // Elements to animate
   const animatedElements = document.querySelectorAll(
     '.section-title, .section-subtitle, .about-text, .stat-item, ' +
-    '.skill-category, .skill-pill, .timeline-item, .project-card, .contact-card'
+    '.skill-category, .skill-pill, .skill-item, .mastery-legend, ' +
+    '.timeline-item, .project-card, .contact-card'
   );
   
   // Intersection Observer options
@@ -190,6 +191,11 @@ function getStaggerDelay(element) {
   if (element.classList.contains('skill-pill')) {
     const siblings = Array.from(parent.querySelectorAll('.skill-pill'));
     return siblings.indexOf(element) * 50;
+  }
+  
+  if (element.classList.contains('skill-item')) {
+    const siblings = Array.from(parent.querySelectorAll('.skill-item'));
+    return siblings.indexOf(element) * 80;
   }
   
   if (element.classList.contains('skill-category')) {
