@@ -1,284 +1,436 @@
-<!-- trigger github pages build -->
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8" />
-  <title>Your Name – Portfolio</title>
-  <meta name="viewport" content="width=device-width, initial-scale=1" />
-  <meta name="description" content="Portfolio of Your Name – Web developer, problem solver, and builder." />
-
-  <style>
-    :root {
-      --bg: #0f172a;
-      --bg-alt: #020617;
-      --accent: #38bdf8;
-      --text: #e5e7eb;
-      --muted: #9ca3af;
-      --card: #020617;
-    }
-
-    * { box-sizing: border-box; }
-
-    body {
-      margin: 0;
-      font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", sans-serif;
-      background: radial-gradient(circle at top, #1e293b, var(--bg));
-      color: var(--text);
-      line-height: 1.6;
-    }
-
-    main {
-      max-width: 960px;
-      margin: 0 auto;
-      padding: 3rem 1.5rem 4rem;
-    }
-
-    header {
-      text-align: center;
-      margin-bottom: 3rem;
-    }
-
-    .tagline {
-      color: var(--accent);
-      text-transform: uppercase;
-      letter-spacing: 0.12em;
-      font-size: 0.8rem;
-      margin-bottom: 0.75rem;
-    }
-
-    h1 {
-      margin: 0 0 0.5rem;
-      font-size: clamp(2.4rem, 4vw, 3.2rem);
-    }
-
-    .subtitle {
-      color: var(--muted);
-      max-width: 34rem;
-      margin: 0.5rem auto 0;
-      font-size: 0.95rem;
-    }
-
-    .pill-row {
-      display: inline-flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      margin-top: 1.5rem;
-      justify-content: center;
-    }
-
-    .pill {
-      border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.5);
-      padding: 0.35rem 0.9rem;
-      font-size: 0.8rem;
-      color: var(--muted);
-      background: rgba(15, 23, 42, 0.7);
-    }
-
-    section {
-      margin-bottom: 3rem;
-    }
-
-    h2 {
-      font-size: 1.4rem;
-      margin-bottom: 1rem;
-    }
-
-    .section-subtitle {
-      color: var(--muted);
-      font-size: 0.95rem;
-      margin-bottom: 1.5rem;
-      max-width: 38rem;
-    }
-
-    .grid {
-      display: grid;
-      gap: 1.25rem;
-    }
-
-    @media (min-width: 720px) {
-      .grid-2 {
-        grid-template-columns: repeat(2, minmax(0, 1fr));
-      }
-    }
-
-    .card {
-      background: radial-gradient(circle at top left, #1f2937, var(--card));
-      border-radius: 1rem;
-      border: 1px solid rgba(148, 163, 184, 0.25);
-      padding: 1.25rem 1.3rem;
-      box-shadow: 0 18px 45px rgba(15, 23, 42, 0.8);
-    }
-
-    .card h3 {
-      margin: 0 0 0.35rem;
-      font-size: 1.05rem;
-    }
-
-    .card-meta {
-      font-size: 0.8rem;
-      color: var(--muted);
-      margin-bottom: 0.65rem;
-    }
-
-    .card a {
-      color: var(--accent);
-      text-decoration: none;
-      font-size: 0.85rem;
-    }
-
-    .card a:hover {
-      text-decoration: underline;
-    }
-
-    .list-inline {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 0.5rem;
-      padding: 0;
-      margin: 0.75rem 0 0;
-      list-style: none;
-      font-size: 0.8rem;
-      color: var(--muted);
-    }
-
-    .list-inline li::before {
-      content: "• ";
-      opacity: 0.6;
-    }
-
-    .contact {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      align-items: center;
-    }
-
-    .contact a {
-      color: var(--accent);
-      text-decoration: none;
-      font-weight: 500;
-    }
-
-    .contact a:hover {
-      text-decoration: underline;
-    }
-
-    .btn {
-      display: inline-flex;
-      align-items: center;
-      justify-content: center;
-      padding: 0.6rem 1.1rem;
-      border-radius: 999px;
-      border: 1px solid rgba(148, 163, 184, 0.7);
-      background: linear-gradient(135deg, #0ea5e9, #22c55e);
-      color: #0b1120;
-      font-weight: 600;
-      font-size: 0.9rem;
-      text-decoration: none;
-      box-shadow: 0 12px 35px rgba(34, 211, 238, 0.35);
-    }
-
-    .btn:hover {
-      filter: brightness(1.04);
-    }
-
-    footer {
-      text-align: center;
-      font-size: 0.75rem;
-      color: var(--muted);
-      margin-top: 2rem;
-      opacity: 0.8;
-    }
-  </style>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Joeven Cerveza – Senior Software Engineer</title>
+  <meta name="description" content="Portfolio of Joeven Cerveza – Senior Software Engineer with 9+ years of experience in web development, API integration, and AI-driven solutions.">
+  <meta name="author" content="Joeven Cerveza">
+  
+  <!-- Open Graph -->
+  <meta property="og:title" content="Joeven Cerveza – Senior Software Engineer">
+  <meta property="og:description" content="9+ years crafting backend solutions and leading development teams.">
+  <meta property="og:type" content="website">
+  
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+  
+  <!-- Styles -->
+  <link rel="stylesheet" href="styles.css">
 </head>
-
 <body>
-  <main>
-    <header>
-      <div class="tagline">Portfolio</div>
-      <h1>Your Name</h1>
-      <p class="subtitle">
-        Web developer focused on building clean, fast, and maintainable interfaces.
-        I enjoy turning tricky problems into simple, reliable solutions.
+  <!-- Cursor Glow Effect -->
+  <div class="cursor-glow"></div>
+
+  <!-- Navigation -->
+  <nav class="nav">
+    <div class="container nav-content">
+      <a href="#" class="nav-logo">JC</a>
+      <ul class="nav-links">
+        <li><a href="#about">About</a></li>
+        <li><a href="#skills">Skills</a></li>
+        <li><a href="#experience">Experience</a></li>
+        <li><a href="#projects">Projects</a></li>
+        <li><a href="#contact">Contact</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Toggle navigation">
+        <span></span>
+        <span></span>
+        <span></span>
+      </button>
+    </div>
+  </nav>
+
+  <!-- Hero Section -->
+  <section class="hero">
+    <div class="hero-bg">
+      <div class="hero-grid"></div>
+      <div class="hero-orb hero-orb-1"></div>
+      <div class="hero-orb hero-orb-2"></div>
+      <div class="hero-orb hero-orb-3"></div>
+    </div>
+    
+    <div class="hero-content">
+      <div class="profile-image-wrapper">
+        <div class="profile-image-glow"></div>
+        <img src="joeven.png" alt="Joeven Cerveza" class="profile-image">
+      </div>
+      <div class="hero-badge">Available for opportunities</div>
+      <h1 class="hero-name">Joeven Cerveza</h1>
+      <p class="hero-title">Senior <span>Software Engineer</span></p>
+      <p class="hero-tagline">
+        9+ years crafting robust backend solutions, leading teams, and building scalable applications across industries.
       </p>
-      <div class="pill-row">
-        <span class="pill">JavaScript / TypeScript</span>
-        <span class="pill">Svelte / React</span>
-        <span class="pill">Node / APIs</span>
-        <span class="pill">UX-focused</span>
+      <div class="hero-cta">
+        <a href="mailto:cervezajoeven@gmail.com" class="btn btn-primary">
+          <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+            <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+            <polyline points="22,6 12,13 2,6"></polyline>
+          </svg>
+          Get in Touch
+        </a>
+        <a href="#projects" class="btn btn-secondary">View My Work</a>
       </div>
-    </header>
+    </div>
+    
+    <div class="scroll-indicator">
+      <span>Scroll</span>
+      <div class="scroll-indicator-line"></div>
+    </div>
+  </section>
 
-    <section id="projects">
-      <h2>Selected Projects</h2>
-      <p class="section-subtitle">A few things I’ve built or contributed to recently.</p>
-
-      <div class="grid grid-2">
-        <article class="card">
-          <h3>Project One</h3>
-          <div class="card-meta">Single-page app · 2025</div>
-          <p>
-            Short description of what this does, who it’s for, and what you were responsible for.
-            Mention performance, UX, or interesting technical bits.
-          </p>
-          <ul class="list-inline">
-            <li>SvelteKit</li>
-            <li>Node API</li>
-            <li>PostgreSQL</li>
-          </ul>
-          <p>
-            <a href="https://your-project-link.com" target="_blank" rel="noopener noreferrer">View live site →</a>
-          </p>
-        </article>
-
-        <article class="card">
-          <h3>Project Two</h3>
-          <div class="card-meta">Internal tool · 2024</div>
-          <p>
-            Another project summary. Focus on impact: time saved, errors reduced, or process improved.
-          </p>
-          <ul class="list-inline">
-            <li>React</li>
-            <li>REST API</li>
-            <li>Automation</li>
-          </ul>
-          <p>
-            <a href="https://github.com/yourusername/your-repo" target="_blank" rel="noopener noreferrer">
-              View code on GitHub →
-            </a>
-          </p>
-        </article>
-      </div>
-    </section>
-
-    <section id="about">
-      <h2>About</h2>
+  <!-- About Section -->
+  <section id="about" class="section">
+    <div class="container">
+      <h2 class="section-title">About Me</h2>
       <p class="section-subtitle">
-        A short paragraph about how you work, what you care about, and what kinds of problems you like solving.
+        A passionate developer who loves turning complex problems into elegant solutions.
       </p>
-      <p>
-        You can mention years of experience, industries you’ve worked in, and a sentence on how you
-        collaborate with designers, backend devs, business stakeholders, etc.
-      </p>
-    </section>
+      
+      <div class="about-content">
+        <div class="about-text">
+          <p>
+            With over nine years in software development, I've evolved from a Magento backend developer to leading development teams and architecting enterprise-level solutions. My journey has taken me through government agencies, e-commerce platforms, and multinational companies across the Philippines, Malaysia, and Australia.
+          </p>
+          <p>
+            I specialize in building robust APIs, automating business processes, and integrating AI technologies to drive innovation. Whether it's developing Power Automate workflows, crafting custom Laravel applications, or mentoring development teams, I bring a blend of technical expertise and leadership to every project.
+          </p>
+          <p>
+            Based in La Carlota City, Negros Occidental, Philippines, I'm always excited to tackle new challenges and contribute to projects that make a real impact.
+          </p>
+        </div>
+        
+        <div class="stats-grid">
+          <div class="stat-item">
+            <div class="stat-number">9+</div>
+            <div class="stat-label">Years Experience</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">5+</div>
+            <div class="stat-label">Companies</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">3</div>
+            <div class="stat-label">Countries</div>
+          </div>
+          <div class="stat-item">
+            <div class="stat-number">∞</div>
+            <div class="stat-label">Lines of Code</div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
 
-    <section id="contact">
-      <h2>Contact</h2>
-      <div class="contact">
-        <a class="btn" href="mailto:you@example.com">Email me</a>
-        <a href="https://github.com/yourusername" target="_blank" rel="noopener noreferrer">GitHub</a>
-        <a href="https://www.linkedin.com/in/yourprofile" target="_blank" rel="noopener noreferrer">LinkedIn</a>
+  <!-- Skills Section -->
+  <section id="skills" class="section">
+    <div class="container">
+      <h2 class="section-title">Technical Skills</h2>
+      <p class="section-subtitle">
+        Technologies and tools I use to bring ideas to life.
+      </p>
+      
+      <div class="skills-grid">
+        <div class="skill-category">
+          <h3 class="skill-category-title">Backend Development</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">PHP</span>
+            <span class="skill-pill">Laravel</span>
+            <span class="skill-pill">CodeIgniter</span>
+            <span class="skill-pill">Processmaker</span>
+            <span class="skill-pill">Node.js</span>
+            <span class="skill-pill">REST APIs</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3 class="skill-category-title">Frontend Development</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">JavaScript</span>
+            <span class="skill-pill">Svelte</span>
+            <span class="skill-pill">HTML5</span>
+            <span class="skill-pill">CSS3</span>
+            <span class="skill-pill">jQuery</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3 class="skill-category-title">Databases</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">PostgreSQL</span>
+            <span class="skill-pill">MySQL</span>
+            <span class="skill-pill">SQL</span>
+            <span class="skill-pill">Database Design</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3 class="skill-category-title">AI & Automation</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">AI Prompting</span>
+            <span class="skill-pill">AI Agents</span>
+            <span class="skill-pill">Microsoft Power Automate</span>
+            <span class="skill-pill">Google Apps Script</span>
+            <span class="skill-pill">Process Automation</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3 class="skill-category-title">E-Commerce & CMS</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Magento</span>
+            <span class="skill-pill">Maropost Neto</span>
+            <span class="skill-pill">WordPress</span>
+            <span class="skill-pill">SEO Optimization</span>
+          </div>
+        </div>
+        
+        <div class="skill-category">
+          <h3 class="skill-category-title">Leadership & Tools</h3>
+          <div class="skill-pills">
+            <span class="skill-pill">Team Leadership</span>
+            <span class="skill-pill">Code Review</span>
+            <span class="skill-pill">Mentorship</span>
+            <span class="skill-pill">Microsoft Office</span>
+            <span class="skill-pill">Git</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Experience Section -->
+  <section id="experience" class="section">
+    <div class="container">
+      <h2 class="section-title">Work Experience</h2>
+      <p class="section-subtitle">
+        A timeline of my professional journey across three countries.
+      </p>
+      
+      <div class="timeline">
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">October 2023 – Present</div>
+          <h3 class="timeline-role">Senior Software Engineer</h3>
+          <div class="timeline-company">Rapid Clean Illawarra · Illawarra, NSW, Australia</div>
+          <div class="timeline-description">
+            <ul>
+              <li>Leverage AI to assist in coding and application development, enhancing automation and efficiency</li>
+              <li>Develop and integrate APIs for seamless data exchange across platforms</li>
+              <li>Design and implement Power Automate workflows to streamline company processes</li>
+              <li>Maintain Maropost Neto eCommerce website themes and functionality</li>
+              <li>Optimize product SEO strategies for enhanced visibility</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">August 2020 – August 2023</div>
+          <h3 class="timeline-role">Lead Developer</h3>
+          <div class="timeline-company">Aneqa Resources Sdn Bhd · Johor Bahru, Malaysia</div>
+          <div class="timeline-description">
+            <ul>
+              <li>Led and managed development teams, assigning tasks, setting goals, and tracking progress</li>
+              <li>Developed web applications using HTML, CSS, JavaScript, and various frameworks</li>
+              <li>Built mobile applications for Android (Native) and iOS (Swift)</li>
+              <li>Conducted code reviews and provided technical mentorship to team members</li>
+              <li>Communicated with stakeholders, providing project updates and addressing concerns</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">January 2018 – July 2020</div>
+          <h3 class="timeline-role">Full Stack Web Developer</h3>
+          <div class="timeline-company">Aneqa Resources Sdn Bhd · Johor Bahru, Malaysia</div>
+          <div class="timeline-description">
+            <ul>
+              <li>Analyzed, designed, and developed business process applications using Processmaker (PHP-based)</li>
+              <li>Conducted comprehensive database analysis, design, and optimization</li>
+              <li>Maintained client websites, overseeing frontend and backend applications</li>
+              <li>Achieved Processmaker Advanced Architect certification</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">January 2017 – December 2017</div>
+          <h3 class="timeline-role">Web Programmer</h3>
+          <div class="timeline-company">Advanced Science and Technology Institute · Manila, Philippines</div>
+          <div class="timeline-description">
+            <ul>
+              <li>Developed custom applications for government agencies</li>
+              <li>Analyzed and improved business workflows and processes</li>
+              <li>Redesigned and upgraded existing applications for better performance</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">November 2015 – July 2016</div>
+          <h3 class="timeline-role">Magento Backend Developer</h3>
+          <div class="timeline-company">Binary Anvil · Bacolod, Philippines</div>
+          <div class="timeline-description">
+            <ul>
+              <li>Installed and developed various Magento modules and customizations</li>
+              <li>Created custom search functionalities and WordPress integration</li>
+              <li>Maintained multiple ongoing e-commerce projects</li>
+            </ul>
+          </div>
+        </div>
+        
+        <div class="timeline-item">
+          <div class="timeline-dot"></div>
+          <div class="timeline-date">June 2015 – November 2015</div>
+          <h3 class="timeline-role">Faculty Teacher</h3>
+          <div class="timeline-company">STI West Negros University · Bacolod, Philippines</div>
+          <div class="timeline-description">
+            <ul>
+              <li>Taught computer fundamentals and Java programming</li>
+              <li>Served as panel member for capstone projects</li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Projects Section -->
+  <section id="projects" class="section">
+    <div class="container">
+      <h2 class="section-title">Featured Projects</h2>
+      <p class="section-subtitle">
+        A selection of projects I've worked on. More coming soon!
+      </p>
+      
+      <div class="projects-grid">
+        <article class="project-card">
+          <span class="project-number">01</span>
+          <h3 class="project-title">National Museum of the Philippines</h3>
+          <div class="project-meta">Government Website · WordPress Development</div>
+          <p class="project-description">
+            Developed and deployed the official website for the National Museum of the Philippines, a premier cultural institution. Handled design implementation, content management, and full deployment.
+          </p>
+          <div class="project-tech">
+            <span>WordPress</span>
+            <span>PHP</span>
+            <span>Web Design</span>
+            <span>Deployment</span>
+          </div>
+          <a href="https://www.nationalmuseum.gov.ph/" target="_blank" rel="noopener noreferrer" class="project-link">
+            Visit Live Site
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M18 13v6a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2V8a2 2 0 0 1 2-2h6M15 3h6v6M10 14L21 3"/>
+            </svg>
+          </a>
+        </article>
+
+        <article class="project-card">
+          <span class="project-number">02</span>
+          <h3 class="project-title">Business Process Automation</h3>
+          <div class="project-meta">Workflow Automation</div>
+          <p class="project-description">
+            Automated business workflows using Power Automate and custom integrations, reducing manual processing time by 70%.
+          </p>
+          <div class="project-tech">
+            <span>Power Automate</span>
+            <span>APIs</span>
+            <span>JavaScript</span>
+            <span>AI Integration</span>
+          </div>
+          <a href="#" class="project-link">
+            View Details
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </article>
+        
+        <article class="project-card">
+          <span class="project-number">03</span>
+          <h3 class="project-title">Government Portal System</h3>
+          <div class="project-meta">Web Application</div>
+          <p class="project-description">
+            Custom web application for government agencies with workflow management and inter-department collaboration features.
+          </p>
+          <div class="project-tech">
+            <span>Processmaker</span>
+            <span>PHP</span>
+            <span>MySQL</span>
+            <span>jQuery</span>
+          </div>
+          <a href="#" class="project-link">
+            View Details
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M5 12h14M12 5l7 7-7 7"/>
+            </svg>
+          </a>
+        </article>
+      </div>
       </div>
     </section>
 
-    <footer>
-      © <span id="year"></span> Your Name. All rights reserved.
-    </footer>
-  </main>
+  <!-- Contact Section -->
+  <section id="contact" class="section contact-section">
+    <div class="container">
+      <h2 class="section-title">Get In Touch</h2>
+      <p class="section-subtitle">
+        Have a project in mind or want to discuss opportunities? I'd love to hear from you.
+      </p>
+      
+      <div class="contact-cards">
+        <div class="contact-card" data-copy="cervezajoeven@gmail.com">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+              <polyline points="22,6 12,13 2,6"></polyline>
+            </svg>
+          </div>
+          <div class="contact-label">Email</div>
+          <div class="contact-value">cervezajoeven@gmail.com</div>
+          <div class="copy-tooltip">Click to copy</div>
+        </div>
+        
+        <div class="contact-card" data-copy="+63 976 346 1971">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+            </svg>
+          </div>
+          <div class="contact-label">Phone</div>
+          <div class="contact-value">+63 976 346 1971</div>
+          <div class="copy-tooltip">Click to copy</div>
+        </div>
+        
+        <div class="contact-card" data-copy="La Carlota City, Negros Occidental, Philippines">
+          <div class="contact-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+              <path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"></path>
+              <circle cx="12" cy="10" r="3"></circle>
+            </svg>
+          </div>
+          <div class="contact-label">Location</div>
+          <div class="contact-value">La Carlota City, Philippines</div>
+          <div class="copy-tooltip">Click to copy</div>
+        </div>
+      </div>
+      </div>
+    </section>
 
-  <script>
-    document.getElementById("year").textContent = new Date().getFullYear();
-  </script>
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> Joeven Cerveza. Built with <span>♥</span> and clean code.</p>
+    </div>
+    </footer>
+
+  <!-- Scripts -->
+  <script src="script.js"></script>
 </body>
 </html>
